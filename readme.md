@@ -35,6 +35,13 @@ npx prisma migrate dev
 npx prisma db push
 ```
 
+5. Dependencias para Linux Ubuntu (requeridas)
+```bash
+sudo apt-get install chromium-browser
+sudo apt-get install libasound2
+sudo apt-get install libgbm1
+```
+
 ## Uso
 
 ### Desarrollo
