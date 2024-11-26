@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./wapi.db"
+}
+
+model AlertUsers {
+  id String @id
+}
+
+model History {
+  id         Int      @id @default(autoincrement())
+  name       String
+  created_at DateTime @default(now())
+}
+
+model Errors {
+  id          Int      @id @default(autoincrement())
+  description String
+  created_at  DateTime @default(now())
+}
