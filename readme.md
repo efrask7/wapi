@@ -4,9 +4,11 @@ Una API para enviar mensajes de WhatsApp a través de un Webhook de Uptime Kuma.
 
 ## Requisitos
 
-- Node.js v16 o superior
-- NPM
-- Uptime Kuma
+- Node.js (v22.7.0)
+- NPM (10.8.2)
+- Uptime Kuma (1.23.15)
+  
+Las versiones indicadas son las que se usaron al momento de desarrollar  la API.
 
 ## Instalación
 
@@ -32,7 +34,9 @@ WHATSAPP_CLIENT=nombre_cliente <- ID Unico para identificar la sesión
 4. Configurar la base de datos con cualquiera de los 2 comandos
 ```bash
 npx prisma migrate dev
-npx prisma db push
+```
+```bash
+npx prisma migrate dev
 ```
 
 5. Dependencias para Linux Ubuntu (requeridas)
@@ -124,7 +128,7 @@ Body:
 > 
 > This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp or any of its subsidiaries or its affiliates. The official WhatsApp website can be found at whatsapp.com. "WhatsApp" as well as related names, marks, emblems and images are registered trademarks of their respective owners. Also it is not guaranteed you will not be blocked by using this method. WhatsApp does not allow bots or unofficial clients on their platform, so this shouldn't be considered totally safe.
 
-*Este proyecto no esta afiliado, asociado, authorizado o conectado de ninguna manera por Whatsapp o sus afiliados. La página oficial de Whatsapp puede ser encontrada en [whatsapp.com](https://whatsapp.com). "WhatsApp" y sus nombres relacionados, marcas, emblemas e imágenes son registradas marcas de sus respectivos dueños. Tampoco se garantiza que no seras bloqueado por usar este método. WhatsApp no permite bots o clientes no oficiales en su plataforma, por lo que esto no debe considerarse totalmente seguro.*
+Este proyecto no esta afiliado, asociado, autorizado o conectado de ninguna manera con Whatsapp o sus afiliados. La página oficial de Whatsapp puede ser encontrada en [whatsapp.com](https://whatsapp.com). "WhatsApp" y sus nombres relacionados, marcas, emblemas e imágenes son registradas marcas de sus respectivos dueños. Tampoco se garantiza que no seras bloqueado por usar este método. WhatsApp no permite bots o clientes no oficiales en su plataforma, por lo que esto no debe considerarse totalmente seguro.
 ## Créditos
 
 - [Uptime Kuma](https://github.com/louislam/uptime-kuma)
